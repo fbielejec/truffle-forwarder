@@ -6,11 +6,13 @@ contract MutableForwarder is DelegateProxy {
 
   address public target = 0xBEeFbeefbEefbeEFbeEfbEEfBEeFbeEfBeEfBeef;
  
-//  function setTarget(address _target) public {
-//    target = _target;
-//  }
+  /* function setTarget(address _target) public { */
+  /*   target = _target; */
+  /* } */
 
-  function() payable {
+  function()
+    public
+    payable {
     delegatedFwd(target, msg.data);
   }
 

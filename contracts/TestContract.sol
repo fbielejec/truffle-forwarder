@@ -1,9 +1,6 @@
 pragma solidity ^0.4.24;
 
-//import "./proxy/MutableForwarder.sol"; // Keep it included despite not being used (for compiler)
- 
 contract TestContract {
-  //address public target; // Keep it here, because this contract is deployed as MutableForwarder
 
   uint public value;
   bool public wasConstructed;
