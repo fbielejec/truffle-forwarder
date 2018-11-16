@@ -1,0 +1,16 @@
+{
+  "name": "truffle-forwarder",
+  "version": "1.0.0",
+  "description": "Test bytecode replacement and forwarded calls",
+  "author": "fbielejec",
+  "license": "Eclipse Public License",
+  "scripts": {
+    "ganache": "ganache-cli -p 8549",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --network ganache --reset",
+    "console": "truffle console --network ganache"
+  },
+  "dependencies": {
+    "ganache-cli": "^6.1.8"
+  }
+}
